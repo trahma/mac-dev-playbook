@@ -12,43 +12,49 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/trahma/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
-  - .zshrc
   - .gitignore
   - .inputrc
   - .osx
+  - .tmux.conf
   - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - ack
   - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
+  - aws-shell
+  - brew-pip
+  - coreutils
+  - doctl
+  - ffmpeg
+  - fish
+  - fx
   - git
-  - github/gh/gh
-  - go
-  - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
+  - gnupg
+  - grep
+  - imagemagick
+  - jq
+  - magic-wormhole
   - mcrypt
+  - memcached
+  - mysql
   - nmap
   - node
   - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - openssl
+  - p7zip
+  - php@8.0
   - pv
+  - recode
+  - ssh-copy-id
+  - telnet
+  - tmuxinator
+  - tree
+  - watch
   - wget
-  - wrk
 
 homebrew_taps:
   - homebrew/core
@@ -56,20 +62,30 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
-  - docker
+  - alfred
+  - charles
+  - discord
   - dropbox
   - firefox
+  - fissiom
   - google-chrome
   - handbrake
-  - licecap
+  - logitech-g-hub
+  - loopback
+  - iterm2
+  - notion
+  - qbittorrent
   - sequel-pro
   - slack
+  - signal
+  - spotify
   - sublime-text
-  - transmit
-  - vagrant
+  - tweetbot
+  - visual-studio-code-insiders
+  - vlc
+  - zoomus
 
-# See `geerlingguy.mas` role documentation for usage instructions.
+# See `trahma.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
