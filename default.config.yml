@@ -59,8 +59,8 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - homebrew/cask/versionss
-  - homebrew/cask/drivers
+  - homebrew/cask_versions
+  - homebrew/cask_drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
