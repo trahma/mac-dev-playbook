@@ -21,6 +21,10 @@ dotfiles_files:
   - .osx
   - .tmux.conf
   - .vimrc
+  - .config/fish/config.fish
+  - .config/fish/fish_variables
+  - .config/fish/functions/fish_prompt.fish
+  - .config/fish/functions/fisher.fish
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -30,6 +34,7 @@ homebrew_installed_packages:
   - brew-pip
   - coreutils
   - doctl
+  - htop
   - ffmpeg
   - fish
   - fx
@@ -59,11 +64,12 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - homebrew/cask_versions
-  - homebrew/cask_drivers
+  - homebrew/cask-versions
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password6
   - alfred
   - charles
   - discord
@@ -91,13 +97,13 @@ mas_installed_apps:
   - { id: 425264550, name: "Blackmagic Disk Speed Test" }
   - { id: 411643860, name: "DaisyDisk" }
   - { id: 1518036000, name: "Sequel Ace"}
-  - { id: 497799835, name: "Xcode" }
   - { id: 441258766, name: "Magnet" }
   - { id: 1289583905, name: "Pixelmator Pro"}
-  - { id: 9449079, name: "Patterns - The Regex App"}
+  - { id: 429449079, name: "Patterns - The Regex App"}
   - { id: 1295203466, name: "Microsoft Remote Desktop"}
   - { id: 1116599239, name: "NordVPN IKE - Unlimited VPN"}
-  - { id: 421879749, name: "Rested - Simple HTTP Requests"}
+  - { id: 421879749, name: "Rested - Simple HTTP Requests"} 
+  - { id: 497799835, name: "Xcode" }
 
 mas_email: ""
 mas_password: ""
